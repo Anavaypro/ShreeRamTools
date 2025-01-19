@@ -212,3 +212,75 @@ a {
         text-shadow: 0 0 15px #ff7eb3, 0 0 30px #ff7eb3, 0 0 40px #ff7eb3;
     }
 }
+.circle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(36, 186, 241, 0.6);
+    border-radius: 50%;
+    animation: moveCircle 15s linear infinite;
+    filter: blur(5px);
+}
+
+/* Random Circle Placement */
+.circle:nth-child(1) {
+    top: 20%;
+    left: 30%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+    top: 50%;
+    left: 10%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+    top: 70%;
+    left: 50%;
+    animation-duration: 14s;
+    animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+    top: 40%;
+    left: 80%;
+    animation-duration: 13s;
+    animation-delay: 6s;
+}
+
+.circle:nth-child(5) {
+    top: 30%;
+    left: 60%;
+    animation-duration: 11s;
+    animation-delay: 8s;
+}
+
+/* Circle Animation Keyframes */
+@keyframes moveCircle {
+    0% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5) translateY(-100px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2) translateY(-200px);
+        opacity: 0;
+    }
+}
+
