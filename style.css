@@ -261,6 +261,58 @@ a {
     animation-delay: 6s;
 }
 
+.cd {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cd:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cd-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cd-content {
+  padding: 20px;
+}
+
+.cd-title {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.cd-description {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.cd-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  color: #fff;
+  background: #007BFF;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cd-button:hover {
+  background: #0056b3;
+}
+
 .circle:nth-child(5) {
     top: 30%;
     left: 60%;
